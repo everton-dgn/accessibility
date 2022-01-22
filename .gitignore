@@ -40,3 +40,6 @@ yarn-error.log*
 # storybook
 /storybook-static
 /src/stories
+
+# typescript incremental features
+tsconfig.tsbuildinfo
