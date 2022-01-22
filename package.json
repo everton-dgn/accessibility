@@ -9,7 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src/**/*.{ts,tsx,js,jsx,json} --max-warnings=0",
+    "lint": "eslint src/**/*.[jt]sx? --max-warnings=0",
     "next:lint": "next lint",
     "typecheck": "tsc --project tsconfig.json --skipLibCheck --noEmit",
     "prepare": "husky install",
@@ -26,7 +26,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.[jt]x?": [
+    "src/**/*.[jt]sx?": [
       "yarn lint && yarn next:lint && yarn typecheck",
       "yarn test --findRelatedTests --bail"
     ]
