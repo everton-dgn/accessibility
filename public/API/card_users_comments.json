@@ -1,0 +1,56 @@
+[
+  {
+    "userName": "Patricia Godoy",
+    "city": "São Paulo",
+    "state": "São Paulo",
+    "urlUserBg": "slide-2.jpg",
+    "urlAvatar": "avatar-woman.jpg",
+    "urlProfile": "/comentarios_de_usuarios",
+    "comment": "”Adipisci sunt et ducimus placeat ut dicta.”"
+  },
+  {
+    "userName": "Marcinho Ribeiro",
+    "city": "Belo Horizonte",
+    "state": "Minas Gerais",
+    "urlUserBg": "slide-1.jpg",
+    "urlAvatar": "avatar-man.jpg",
+    "urlProfile": "/comentarios_de_usuarios",
+    "comment": "”Rerum id et beatae voluptates beatae aspernatur.”"
+  },
+  {
+    "userName": "Patricia Godoy",
+    "city": "São Paulo",
+    "state": "São Paulo",
+    "urlUserBg": "slide-2.jpg",
+    "urlAvatar": "avatar-woman.jpg",
+    "urlProfile": "/comentarios_de_usuarios",
+    "comment": "”Nihil quia distinctio quo delectus debitis et.”"
+  },
+  {
+    "userName": "Marcinho Ribeiro",
+    "city": "Belo Horizonte",
+    "state": "Minas Gerais",
+    "urlUserBg": "slide-1.jpg",
+    "urlAvatar": "avatar-man.jpg",
+    "urlProfile": "/comentarios_de_usuarios",
+    "comment": "”Inventore voluptas vel blanditiis et.”"
+  },
+  {
+    "userName": "Patricia Godoy",
+    "city": "São Paulo",
+    "state": "São Paulo",
+    "urlUserBg": "slide-2.jpg",
+    "urlAvatar": "avatar-woman.jpg",
+    "urlProfile": "/comentarios_de_usuarios",
+    "comment": "”Aliquid ut aspernatur eveniet dolores. Praesentium dolor sequi mollitia reiciendis. Tenetur esse et voluptatem exercitationem consequatur provident pariatur. Quasi explicabo recusandae omnis asperiores illo consequatur.”"
+  },
+  {
+    "userName": "Marcinho Ribeiro",
+    "city": "Belo Horizonte",
+    "state": "Minas Gerais",
+    "urlUserBg": "slide-1.jpg",
+    "urlAvatar": "avatar-man.jpg",
+    "urlProfile": "/comentarios_de_usuarios",
+    "comment": "”Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim diam vulputate. Enim sed faucibus turpis in eu mi. Nibh cras pulvinar mattis nunc sed blandit libero. Cras tincidunt lobortis feugiat vivamus at augue eget arcu.”"
+  }
+]

@@ -1,0 +1,8 @@
+export { default as HeadPage } from 'components/HeadPage'
+export { default as Button } from 'components/Button'
+export { default as Load } from 'components/Load'
+export { default as Banner } from 'components/Banner'
+export { default as TitleSection } from 'components/TitleSection'
+export { default as SocialComments } from 'components/SocialComments'
+export { default as CardUsersComments } from 'components/CardUsersComments'
+export { default as Carousel } from 'components/Carousel'
