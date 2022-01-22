@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
-import SocialComments from '.'
 import { renderWithTheme } from 'utils/tests/helpers'
+import SocialComments from '.'
 
 describe('<SocialComments />', () => {
   it('should render the card social with 2 texts, 1 link and 1 image ', () => {

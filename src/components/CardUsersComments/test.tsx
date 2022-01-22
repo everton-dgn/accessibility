@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
-import CardUsersComments from '.'
 import { renderWithTheme } from 'utils/tests/helpers'
+import CardUsersComments from '.'
 
 describe('<CardUsersComments />', () => {
   beforeEach(() => {

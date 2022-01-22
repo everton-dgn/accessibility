@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
-import Carousel from '.'
 import { renderWithTheme } from 'utils/tests/helpers'
+import Carousel from '.'
 
 describe('<CarouselUsersComments />', () => {
   it('should render the carousel with children', () => {
