@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
 import Layouts from 'layouts'
+import styled, { css } from 'styled-components'
 import { Waves } from 'components/Svg/Waves'
 
 export const Header = styled.header.attrs({ role: 'heading' })`
@@ -142,7 +142,7 @@ export const WrapperImg = styled(Layouts.Row)`
     }
   `}
 
-  & > div {
+  & > span {
     position: initial !important;
   }
 

@@ -1,8 +1,8 @@
-import * as S from 'components/Banner/styles'
-import * as C from 'components'
+import { ReactNode } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { ReactNode } from 'react'
+import * as C from 'components'
+import * as S from 'components/Banner/styles'
 
 export type BannerProps = {
   title: string
@@ -43,11 +43,9 @@ const Banner = ({
           <S.WrapperInfo>
             <S.Title>{title}</S.Title>
             <S.Description>{description}</S.Description>
-            <C.IF condition={!!question}>
-              <S.Question>{question}</S.Question>
-            </C.IF>
+            {!!question && <S.Question>{question}</S.Question>}
 
-            <C.IF condition={!!btn}>
+            {!!btn && (
               <S.BtnGroup>
                 {btn?.map(({ textBtn, route }, i) => (
                   <C.Button
@@ -61,7 +59,7 @@ const Banner = ({
                   />
                 ))}
               </S.BtnGroup>
-            </C.IF>
+            )}
           </S.WrapperInfo>
 
           <S.WrapperImg>
@@ -90,9 +88,7 @@ const Banner = ({
         </S.ImgPurpleBalloon>
       </S.Container>
 
-      <C.IF condition={!!children}>
-        <S.Footer>{children}</S.Footer>
-      </C.IF>
+      {!!children && <S.Footer>{children}</S.Footer>}
     </S.Header>
   )
 }

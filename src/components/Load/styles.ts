@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import Layouts from 'layouts'
+import styled from 'styled-components'
 
 export const Container = styled(Layouts.Col)`
   align-items: center;

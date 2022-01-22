@@ -1,6 +1,6 @@
-import * as C from 'components'
-import * as S from 'styles'
 import Link from 'next/link'
+import * as S from 'styles'
+import * as C from 'components'
 
 export default function Home() {
   return (
@@ -10,37 +10,37 @@ export default function Home() {
       <C.TitleSection title="Acessibilidade Web" />
 
       <S.BtnGroup>
-        <Link href="/boas-vindas" passHref>
+        <Link href="/pagina_exemplo_1" passHref>
           <S.LinkBtn>
             <C.Button
               fullWidth={true}
               color="blue"
               size="large"
-              text="Página Welcome"
+              text="Página Exemplo 1"
               className="btn1"
             />
           </S.LinkBtn>
         </Link>
 
-        <Link href="/comentarios_de_usuarios" passHref>
+        <Link href="/pagina_exemplo_2" passHref>
           <S.LinkBtn>
             <C.Button
               fullWidth={true}
               color="blue"
               size="large"
-              text="Página UsersComments"
+              text="Página Exemplo 2"
               className="btn2"
             />
           </S.LinkBtn>
         </Link>
 
-        <Link href="/comentarios_nas_redes_sociais" passHref>
+        <Link href="/pagina_exemplo_3" passHref>
           <S.LinkBtn>
             <C.Button
               fullWidth={true}
               color="blue"
               size="large"
-              text="Página SocialComments"
+              text="Página Exemplo 3"
               className="btn3"
             />
           </S.LinkBtn>

@@ -1,9 +1,9 @@
 import type { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
+import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/GlobalStyles'
 import 'styles/loading.css'
-import { ThemeProvider } from 'styled-components'
 import { T } from 'theme'
 
 Router.events.on('routeChangeStart', () => NProgress.start())

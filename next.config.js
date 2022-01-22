@@ -12,13 +12,7 @@ module.exports = withPWA({
     loader: 'default'
   },
   eslint: {
-    dirs: [
-      'components',
-      'layouts',
-      'pages',
-      'styles',
-      'theme'
-    ]
+    dirs: ['components', 'layouts', 'pages', 'styles', 'theme']
   },
   reactStrictMode: true,
   pageExtensions: ['tsx']

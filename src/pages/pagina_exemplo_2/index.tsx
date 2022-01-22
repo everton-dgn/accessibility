@@ -1,7 +1,7 @@
-import * as C from 'components'
 import { GetStaticProps } from 'next'
-import * as S from 'pages/comentarios_de_usuarios/styles'
 import axios from 'axios'
+import * as S from 'pages/pagina_exemplo_2/styles'
+import * as C from 'components'
 
 export type dataUsersCommentsProps = {
   dataUsersComments: {
@@ -19,10 +19,10 @@ export default function UsersComments({
   dataUsersComments
 }: dataUsersCommentsProps) {
   return (
-    <S.Container>
-      <C.HeadPage title="O que as pessoas estão achando" />
+    <S.Container as="section">
+      <C.HeadPage title="Página Exemplo 2" />
 
-      <C.TitleSection title="O que as pessoas estão achando" />
+      <C.TitleSection title="Página Exemplo 2" />
 
       <S.ContainerCarousel>
         <C.Carousel>

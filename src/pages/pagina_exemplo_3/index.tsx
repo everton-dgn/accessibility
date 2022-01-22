@@ -1,8 +1,8 @@
-import axios from 'axios'
-import * as C from 'components'
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import * as S from 'pages/comentarios_nas_redes_sociais/styles'
 import { useEffect, useRef, useState } from 'react'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import axios from 'axios'
+import * as S from 'pages/pagina_exemplo_3/styles'
+import * as C from 'components'
 
 export interface dataCommentsSocialProps {
   userName: string
@@ -49,10 +49,10 @@ export default function SocialComments({
   if (!dataCommentsSocial) return <C.Load />
 
   return (
-    <S.Container>
-      <C.HeadPage title="O que estão falando nas redes sociais" />
+    <S.Container as="section">
+      <C.HeadPage title="Página Exemplo 3" />
 
-      <C.TitleSection title="O que estão falando nas redes sociais" />
+      <C.TitleSection title="Página Exemplo 3" />
 
       <S.GridSocialComments>
         {dataCommentsSocial
@@ -73,11 +73,7 @@ export default function SocialComments({
           )}
       </S.GridSocialComments>
 
-      <div ref={observerRef}>
-        <C.IF condition={load}>
-          <C.Load />
-        </C.IF>
-      </div>
+      <div ref={observerRef}>{load && <C.Load />}</div>
     </S.Container>
   )
 }

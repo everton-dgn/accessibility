@@ -1,5 +1,5 @@
-import * as S from 'components/SocialComments/styles'
 import Link from 'next/link'
+import * as S from 'components/SocialComments/styles'
 
 export type SocialCommentsProps = {
   comment: string

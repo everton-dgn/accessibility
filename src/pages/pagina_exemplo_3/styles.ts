@@ -1,7 +1,7 @@
 import Layouts from 'layouts'
 import styled, { css } from 'styled-components'
 
-export const Container = styled(Layouts.Container).attrs({ as: 'section' })`
+export const Container = styled(Layouts.Container)`
   margin: 2rem auto;
 
   ${({ theme }) => theme.breakPoint(800)} {

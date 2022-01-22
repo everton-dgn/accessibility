@@ -1,6 +1,6 @@
-import * as S from 'components/Carousel/styles'
 import { ReactNode } from 'react'
 import Slider from 'react-slick'
+import * as S from 'components/Carousel/styles'
 
 export type CarouselUsersCommentsProps = {
   children: ReactNode

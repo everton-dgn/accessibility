@@ -13,8 +13,14 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="description" content="Este projeto procura aplicar boas práticas de acessibilidade web" />
-          <meta name="keywords" content="wcag, w3c, acessibilidade, accessibility, a11y, nextjs, react" />
+          <meta
+            name="description"
+            content="Este projeto procura aplicar boas práticas de acessibilidade web"
+          />
+          <meta
+            name="keywords"
+            content="wcag, w3c, acessibilidade, accessibility, a11y, nextjs, react"
+          />
           <meta name="copyright" content="© Éverton Toffanetto" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

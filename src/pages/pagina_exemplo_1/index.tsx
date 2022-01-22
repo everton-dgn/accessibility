@@ -1,26 +1,26 @@
 import Link from 'next/link'
+import * as S from 'pages/pagina_exemplo_1/styles'
 import * as C from 'components'
-import * as S from 'pages/boas-vindas/styles'
 
 export default function Welcome() {
   return (
     <S.WrapperBanner>
       <S.Container>
-        <C.HeadPage title="Página de Boas-Vindas" />
+        <C.HeadPage title="Página Exemplo 1" />
 
         <C.Banner
-          title="Bem-vindo Marcio,"
+          title="Página Exemplo 1"
           description="Para você aproveitar nossas oportunidades primeiro você precisa estar dentro de um grupo, estamos aqui para lhe ajudar."
           question="O que você prefere?"
           img="/imgs/persons.jpg"
           btn={[
-            { textBtn: 'Criar um grupo', route: '/boas-vindas' },
-            { textBtn: 'Entrar em um grupo', route: '/boas-vindas' }
+            { textBtn: 'Criar um grupo', route: '/pagina_exemplo_1' },
+            { textBtn: 'Entrar em um grupo', route: '/pagina_exemplo_1' }
           ]}
         >
           <S.Paragraph>
             Qualquer dúvida que você tiver é só nos chamar no nosso número de
-            <Link href="/boas-vindas" passHref>
+            <Link href="/pagina_exemplo_1" passHref>
               <S.LinkZap>WhatsApp</S.LinkZap>
             </Link>
             .

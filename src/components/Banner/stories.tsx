@@ -1,6 +1,6 @@
-import { Story } from '@storybook/react'
 import Link from 'next/link'
-import * as S from 'pages/boas-vindas/styles'
+import { Story } from '@storybook/react'
+import * as S from 'pages/pagina_exemplo_1/styles'
 import Banner, { BannerProps } from '.'
 
 const Template: Story<BannerProps> = args => (

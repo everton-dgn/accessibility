@@ -1,8 +1,8 @@
 import { Story } from '@storybook/react'
-import * as C from 'components'
 import Layouts from 'layouts'
 import styled, { css } from 'styled-components'
 import Carousel from '.'
+import * as C from 'components'
 import { dataUsersComments } from 'components/CardUsersComments/mock'
 
 const Container = styled(Layouts.Container).attrs({ as: 'section' })`
