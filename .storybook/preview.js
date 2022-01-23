@@ -1,8 +1,7 @@
 import '../.jest/next-image.mock'
+import { RouterContext } from 'next/dist/shared/lib/router-context'
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
-import { addDecorator } from '@storybook/react'
 import { themes } from '@storybook/theming'
-import { withNextRouter } from 'storybook-addon-next-router'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/GlobalStyles'
 import { T } from 'theme'
@@ -40,6 +39,9 @@ const customViewports = {
 }
 
 export const parameters = {
+  nextRouter: {
+    Provider: RouterContext.Provider
+  },
   layout: 'centered',
   darkMode: {
     dark: {
@@ -77,8 +79,6 @@ export const parameters = {
     ]
   }
 }
-
-addDecorator(withNextRouter())
 
 export const decorators = [
   Story => (

@@ -14,6 +14,9 @@ module.exports = {
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
+  transform: {
+    '^.+\\.[jt]sx?$': ['babel-jest', { presets: ['next/babel'] }]
+  },
   moduleNameMapper: {
     '^styled-components':
       '<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
