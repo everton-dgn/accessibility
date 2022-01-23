@@ -113,8 +113,8 @@ exports[`<Banner /> should render the banner 1`] = `
   left: -2.5rem;
   top: -2rem;
   opacity: 0;
-  -webkit-animation: hRcgSd 0.8s ease forwards;
-  animation: hRcgSd 0.8s ease forwards;
+  -webkit-animation: jfPkyz 0.8s ease forwards;
+  animation: jfPkyz 0.8s ease forwards;
 }
 
 .c14 {
@@ -123,8 +123,8 @@ exports[`<Banner /> should render the banner 1`] = `
   right: -4.5rem;
   bottom: -3rem;
   opacity: 0;
-  -webkit-animation: dcCKBc 0.8s ease forwards;
-  animation: dcCKBc 0.8s ease forwards;
+  -webkit-animation: hngCSK 0.8s ease forwards;
+  animation: hngCSK 0.8s ease forwards;
 }
 
 .c4 {
@@ -144,16 +144,16 @@ exports[`<Banner /> should render the banner 1`] = `
 
 .c7 {
   opacity: 0;
-  -webkit-animation: FTyau 0.8s ease forwards 0.2s;
-  animation: FTyau 0.8s ease forwards 0.2s;
+  -webkit-animation: bNBXqU 0.8s ease forwards 0.2s;
+  animation: bNBXqU 0.8s ease forwards 0.2s;
   font-size: 2.8rem;
   font-weight: 500;
 }
 
 .c8 {
   opacity: 0;
-  -webkit-animation: dcCKBc 0.8s ease forwards 0.2s;
-  animation: dcCKBc 0.8s ease forwards 0.2s;
+  -webkit-animation: hngCSK 0.8s ease forwards 0.2s;
+  animation: hngCSK 0.8s ease forwards 0.2s;
   font-size: 1.6rem;
   font-weight: 400;
   color: #7A7A7A;
@@ -163,8 +163,8 @@ exports[`<Banner /> should render the banner 1`] = `
 
 .c9 {
   opacity: 0;
-  -webkit-animation: kSVEJc 0.8s ease forwards 0.4s;
-  animation: kSVEJc 0.8s ease forwards 0.4s;
+  -webkit-animation: bpRhcC 0.8s ease forwards 0.4s;
+  animation: bpRhcC 0.8s ease forwards 0.4s;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 0 1.5rem 0;
@@ -179,14 +179,14 @@ exports[`<Banner /> should render the banner 1`] = `
 
 .c10 .btn0 {
   opacity: 0;
-  -webkit-animation: dcCKBc 0.8s ease forwards 0.7s;
-  animation: dcCKBc 0.8s ease forwards 0.7s;
+  -webkit-animation: hngCSK 0.8s ease forwards 0.7s;
+  animation: hngCSK 0.8s ease forwards 0.7s;
 }
 
 .c10 .btn1 {
   opacity: 0;
-  -webkit-animation: dcCKBc 0.8s ease forwards 0.9s;
-  animation: dcCKBc 0.8s ease forwards 0.9s;
+  -webkit-animation: hngCSK 0.8s ease forwards 0.9s;
+  animation: hngCSK 0.8s ease forwards 0.9s;
 }
 
 .c12 {
@@ -196,8 +196,8 @@ exports[`<Banner /> should render the banner 1`] = `
   max-width: initial;
   aspect-ratio: 1/0.8;
   opacity: 0;
-  -webkit-animation: ffSPMP 2s ease forwards;
-  animation: ffSPMP 2s ease forwards;
+  -webkit-animation: dCyGXD 2s ease forwards;
+  animation: dCyGXD 2s ease forwards;
 }
 
 .c12 > span {

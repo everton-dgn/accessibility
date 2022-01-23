@@ -45,8 +45,8 @@ exports[`<Load /> should render a load 1`] = `
   border-style: solid;
   border-color: #496b9f transparent transparent transparent;
   border-radius: 50%;
-  -webkit-animation: fEWCgj 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
-  animation: fEWCgj 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  -webkit-animation: gYGOUZ 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: gYGOUZ 1.2s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 
 .c3:nth-child(1) {

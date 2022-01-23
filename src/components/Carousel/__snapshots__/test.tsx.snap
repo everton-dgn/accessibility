@@ -14,8 +14,8 @@ exports[`<CarouselUsersComments /> should render the carousel with children 1`] 
 
 .c1 {
   opacity: 0;
-  -webkit-animation: dcCKBc 0.8s ease forwards;
-  animation: dcCKBc 0.8s ease forwards;
+  -webkit-animation: hngCSK 0.8s ease forwards;
+  animation: hngCSK 0.8s ease forwards;
 }
 
 .c1 .slick-list,
@@ -235,8 +235,8 @@ exports[`<CarouselUsersComments /> should render the carousel with children 1`] 
 
 .c1 .slick-dots {
   opacity: 0;
-  -webkit-animation: dcCKBc 0.8s ease forwards;
-  animation: dcCKBc 0.8s ease forwards;
+  -webkit-animation: hngCSK 0.8s ease forwards;
+  animation: hngCSK 0.8s ease forwards;
   margin-top: 3.2rem;
   width: 100%;
   list-style: none;
