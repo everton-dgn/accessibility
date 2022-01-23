@@ -10,18 +10,18 @@ export default function Welcome() {
 
         <C.Banner
           title="Página Exemplo 1"
-          description="Para você aproveitar nossas oportunidades primeiro você precisa estar dentro de um grupo, estamos aqui para lhe ajudar."
-          question="O que você prefere?"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec."
+          question="Nihil numquam reiciendis."
           img="/imgs/persons.jpg"
           btn={[
-            { textBtn: 'Criar um grupo', route: '/pagina_exemplo_1' },
-            { textBtn: 'Entrar em um grupo', route: '/pagina_exemplo_1' }
+            { textBtn: 'Botão de Exemplo', route: '/pagina_exemplo_1' },
+            { textBtn: 'Clique Aqui!', route: '/pagina_exemplo_1' }
           ]}
         >
           <S.Paragraph>
-            Qualquer dúvida que você tiver é só nos chamar no nosso número de
+            Esse quas aut quis praesentium eos aut quis praesentium eos.
             <Link href="/pagina_exemplo_1" passHref>
-              <S.LinkZap>WhatsApp</S.LinkZap>
+              <S.LinkZap>Link de Ação</S.LinkZap>
             </Link>
             .
           </S.Paragraph>
