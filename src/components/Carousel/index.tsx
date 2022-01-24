@@ -28,7 +28,7 @@ const CarouselUsersComments = ({ children }: CarouselUsersCommentsProps) => {
   }
 
   return (
-    <S.Wrapper>
+    <S.Wrapper as="section" aria-labelledby="Carrossel">
       <Slider {...settings}>{children}</Slider>
     </S.Wrapper>
   )

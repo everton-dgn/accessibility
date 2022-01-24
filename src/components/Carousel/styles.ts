@@ -1,10 +1,7 @@
 import Layouts from 'layouts'
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled(Layouts.Col).attrs({
-  as: 'section',
-  'aria-labelledby': 'Carrossel'
-})`
+export const Wrapper = styled(Layouts.Col)`
   opacity: 0;
   animation: ${({ theme }) => theme.animations.fadeInMove('0', '30px', '0')}
     0.8s ease forwards;
@@ -170,6 +167,17 @@ export const Wrapper = styled(Layouts.Col).attrs({
   .slick-arrow.slick-prev.slick-disabled,
   .slick-arrow.slick-next.slick-disabled {
     display: none !important;
+  }
+
+  .slick-arrow {
+    border-width: 2px;
+    border-color: transparent;
+    border-style: solid;
+
+    &:focus {
+      opacity: 1;
+      border-color: #334bc8;
+    }
   }
 
   .slick-next:before,
