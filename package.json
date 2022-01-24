@@ -17,7 +17,8 @@
     "test:coverage": "jest --runInBand --passWithNoTests --coverage",
     "sb": "start-storybook -p 6006",
     "build-sb": "build-storybook",
-    "generate": "yarn plop --plopfile componentGenerator/plopfile.js"
+    "generate": "yarn plop --plopfile componentGenerator/plopfile.js",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
