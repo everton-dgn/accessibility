@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components'
 export const Container = styled(Layouts.Col)`
   margin: 2rem auto;
   padding: 0;
+  align-items: center;
 
   ${({ theme }) => theme.breakPoint(800)} {
     margin: 12rem auto;
@@ -13,7 +14,6 @@ export const Container = styled(Layouts.Col)`
 
 export const BtnGroup = styled(Layouts.Col)`
   max-width: 35rem;
-  margin: 0 auto;
 
   ${({ theme }) => css`
     gap: ${theme.grid.gutter};
