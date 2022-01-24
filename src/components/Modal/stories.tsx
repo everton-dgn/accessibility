@@ -33,15 +33,19 @@ Advanced.args = {
   title: 'Informações',
   isVisible: true,
   changeVisibility: () => true,
-  btnFirst: {
-    text: 'Confirmar',
-    size: 'xLarge',
-    color: 'blue'
-  },
-  btnLast: {
-    text: 'Cancelar',
-    size: 'xLarge',
-    color: 'red'
-  },
+  btnInfo: [
+    {
+      text: 'Confirmar',
+      size: 'xLarge',
+      color: 'blue',
+      ariaLabel: 'Confirmar'
+    },
+    {
+      text: 'Cancelar',
+      size: 'xLarge',
+      color: 'red',
+      ariaLabel: 'Cancelar'
+    }
+  ],
   msg: 'Isto é apenas um conteúdo informativo de exemplo para visualização do componente Modal!'
 }

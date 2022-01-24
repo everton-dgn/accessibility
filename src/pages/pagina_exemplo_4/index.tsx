@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { useAnimationRender } from 'hooks'
 import * as S from 'pages/pagina_exemplo_4/styles'
 import * as C from 'components'
@@ -5,6 +6,24 @@ import * as C from 'components'
 export default function Notifications() {
   const { renderComponent, setRenderComponent, isVisible, changeVisibility } =
     useAnimationRender({ timeMilSecToRemoveComponent: 200 })
+
+  const btnInfo = useMemo(
+    () => [
+      {
+        text: 'Confirmar',
+        size: 'xLarge',
+        color: 'blue',
+        ariaLabel: 'Confirmar'
+      },
+      {
+        text: 'Cancelar',
+        size: 'xLarge',
+        color: 'red',
+        ariaLabel: 'Cancelar'
+      }
+    ],
+    []
+  )
 
   return (
     <S.Container as="section">
@@ -30,8 +49,7 @@ export default function Notifications() {
           title="Informações"
           isVisible={isVisible}
           changeVisibility={changeVisibility}
-          btnFirst={{ text: 'Confirmar' }}
-          btnLast={{ text: 'Cancelar' }}
+          btnInfo={btnInfo as []}
           msg="Isto é apenas um conteúdo informativo de exemplo para visualização
             do componente Modal!"
         />

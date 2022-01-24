@@ -7,8 +7,9 @@ import { ColorProps, SizeProps } from 'components/Button'
 type BtnModalProps = {
   icon?: ReactNode
   text?: string
-  size?: SizeProps
-  color?: ColorProps
+  size: SizeProps
+  color: ColorProps
+  ariaLabel: string
 }
 
 export type ModalProps = {
@@ -16,8 +17,7 @@ export type ModalProps = {
   title: string
   isVisible: boolean
   changeVisibility: () => void
-  btnFirst?: BtnModalProps
-  btnLast?: BtnModalProps
+  btnInfo?: BtnModalProps[]
   msg: string
 }
 
@@ -31,8 +31,7 @@ const Modal = ({
   isVisible,
   changeVisibility,
   title,
-  btnFirst,
-  btnLast,
+  btnInfo,
   msg
 }: ModalProps) => {
   const { forwardFocus, closePressKeyEsc, refModal, btnCloseModalRef } =
@@ -61,13 +60,12 @@ const Modal = ({
         closePressKeyEsc(e) && changeVisibility()
       }
       ref={refModal}
-      tab-index="-1"
-      role="dialog"
-      aria-labelledby="Modal"
     >
       <S.ContainerPopup
         show={isVisible}
         onClick={(e: { stopPropagation: () => any }) => e.stopPropagation()}
+        role="dialog"
+        aria-labelledby="Modal"
       >
         <S.TitleModal>
           {type === 'info' ? <S.IconInfo /> : <S.IconWarn />}
@@ -87,31 +85,20 @@ const Modal = ({
 
         <S.Content>{msg}</S.Content>
 
-        {(btnFirst || btnLast) && (
-          <S.FooterModal>
-            {!!btnFirst && (
+        <S.FooterModal>
+          {!!btnInfo &&
+            btnInfo.map(({ text, size, color, icon, ariaLabel }) => (
               <C.Button
-                icon={btnFirst?.icon}
-                text={btnFirst?.text}
-                size="xLarge"
-                color="blue"
-                aria-label={btnFirst?.text}
+                key={text}
+                icon={icon}
+                text={text}
+                size={size}
+                color={color}
+                aria-label={ariaLabel}
                 onClick={closeModalAndActionLastFocusedElement}
               />
-            )}
-
-            {!!btnLast && (
-              <C.Button
-                icon={btnLast?.icon}
-                text={btnLast?.text}
-                size="xLarge"
-                color="red"
-                aria-label={btnLast?.text}
-                onClick={closeModalAndActionLastFocusedElement}
-              />
-            )}
-          </S.FooterModal>
-        )}
+            ))}
+        </S.FooterModal>
       </S.ContainerPopup>
     </S.Overlay>
   )
