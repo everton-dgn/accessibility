@@ -45,6 +45,18 @@ export default function Home() {
             />
           </S.LinkBtn>
         </Link>
+
+        <Link href="/pagina_exemplo_4" passHref>
+          <S.LinkBtn>
+            <C.Button
+              fullWidth={true}
+              color="blue"
+              size="large"
+              text="Página Exemplo 4"
+              className="btn4"
+            />
+          </S.LinkBtn>
+        </Link>
       </S.BtnGroup>
     </S.Container>
   )
