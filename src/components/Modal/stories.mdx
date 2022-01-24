@@ -1,0 +1,40 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import Modal from '.'
+import * as stories from './stories'
+
+<Meta
+  title="Design System/Modal"
+  component={Modal}
+  argTypes={{
+    type: {
+      options: ['warn', 'info'],
+      control: { type: 'inline-radio' }
+    }
+  }}
+  parameters={{
+    controls: {
+      exclude: ['changeVisibility', 'lastFocusedElement', 'onClick'],
+      sort: 'requiredFirst'
+    }
+  }}
+/>
+
+# Modal
+
+This is a general-purpose modal component.
+
+### Default
+
+The modal component is fully accessible, receives props to help with accessibility and when closed, returns focus to the last element clicked.
+
+<Canvas>
+  <Story story={stories.Default} />
+</Canvas>
+
+### Advanced
+
+The modal can receive props to render up to 2 buttons maximum.
+
+<Canvas>
+  <Story story={stories.Advanced} />
+</Canvas>

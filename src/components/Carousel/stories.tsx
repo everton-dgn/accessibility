@@ -5,7 +5,7 @@ import Carousel from '.'
 import * as C from 'components'
 import { dataUsersComments } from 'components/CardUsersComments/mock'
 
-const Container = styled(Layouts.Container).attrs({ as: 'section' })`
+const Container = styled(Layouts.Container)`
   margin: 2rem auto;
   padding: 0;
 
@@ -27,7 +27,7 @@ const ContainerCarousel = styled(Layouts.Col)`
 `
 
 const Template: Story = args => (
-  <Container>
+  <Container as="section">
     <ContainerCarousel>
       <Carousel {...args}>
         {dataUsersComments.map(
