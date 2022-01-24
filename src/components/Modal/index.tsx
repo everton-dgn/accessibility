@@ -66,6 +66,7 @@ const Modal = ({
         onClick={(e: { stopPropagation: () => any }) => e.stopPropagation()}
         role="dialog"
         aria-labelledby="Modal"
+        aria-modal={isVisible}
       >
         <S.TitleModal>
           {type === 'info' ? <S.IconInfo /> : <S.IconWarn />}

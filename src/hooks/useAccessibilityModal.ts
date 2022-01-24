@@ -60,7 +60,7 @@ export const useAccessibilityModal = ({
           allFocusableElementsOfModal[0] as HTMLElement
 
         const controlTabFocus = (e: EventKeyShiftTab) => {
-          e.preventDefault()
+          e.key === 'Tab' && e.preventDefault()
           const isPressShiftAndTab = e.shiftKey && e.key === 'Tab'
 
           if (isPressShiftAndTab) {
