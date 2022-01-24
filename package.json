@@ -12,7 +12,6 @@
     "lint": "eslint src/**/*.{ts,tsx,js,jsx,json} --max-warnings=0",
     "next:lint": "next lint",
     "typecheck": "tsc --project tsconfig.json --skipLibCheck --noEmit",
-    "prepare": "husky install",
     "test": "jest --runInBand --passWithNoTests",
     "test:w": "jest --watch --runInBand --passWithNoTests",
     "test:coverage": "jest --runInBand --passWithNoTests --coverage",
@@ -22,14 +21,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn lint && yarn typecheck && yarn test --findRelatedTests --bail"
     }
-  },
-  "lint-staged": {
-    "src/**/*.ts(x)?": [
-      "yarn lint && yarn next:lint && yarn typecheck",
-      "yarn test --findRelatedTests --bail"
-    ]
   },
   "dependencies": {
     "@styled-icons/bootstrap": "^10.34.0",
@@ -84,7 +77,6 @@
     "jest": "^27.4.7",
     "jest-next-dynamic": "^1.0.1",
     "jest-styled-components": "^7.0.8",
-    "lint-staged": "^12.2.2",
     "plop": "^3.0.5",
     "prettier": "^2.5.1",
     "storybook-addon-next-router": "^3.1.1",
