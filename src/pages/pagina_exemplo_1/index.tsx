@@ -21,7 +21,9 @@ export default function Welcome() {
           <S.Paragraph>
             Esse quas aut quis praesentium eos aut quis praesentium eos.
             <Link href="/pagina_exemplo_1" passHref>
-              <S.LinkZap>Link de Ação</S.LinkZap>
+              <S.LinkZap title="Descreve a ação do link ou para onde redireciona">
+                Link de Ação
+              </S.LinkZap>
             </Link>
             .
           </S.Paragraph>
