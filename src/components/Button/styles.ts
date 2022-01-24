@@ -23,6 +23,13 @@ const SizesBtn = {
       font-size: ${theme.font.sizes.small};
       padding: ${theme.spacings.medium} ${theme.spacings.xxxLarge};
     `}
+  `,
+  xLarge: css`
+    ${({ theme }) => css`
+      height: min-content;
+      font-size: ${theme.font.sizes.small};
+      padding: ${theme.spacings.medium} ${theme.spacings.xtreme};
+    `}
   `
 }
 
@@ -52,6 +59,19 @@ const ColorsBtn = {
         background-color: ${theme.colors.primaryHover};
       }
     `}
+  `,
+  red: css`
+    ${({ theme }) => css`
+      background-color: ${theme.colors.red};
+
+      &:focus {
+        box-shadow: 0 0 0 0.2rem #fd6e6e, 0 0.1rem 1.5rem #3e396b80;
+      }
+
+      &:hover {
+        background-color: ${theme.colors.redHover};
+      }
+    `}
   `
 }
 
@@ -71,7 +91,7 @@ export const Container = styled.button<BtnProps>`
     ${!!color && ColorsBtn[color]};
     ${!!size && SizesBtn[size]}
 
-    ${T.breakPoint(435)} {
+    ${T.breakPoint(480)} {
       width: ${fullWidth ? '100%' : 'fit-content'};
     }
 

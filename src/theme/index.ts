@@ -33,10 +33,13 @@ export const T = {
     bullet: '#EBEDFA',
     white: '#fff',
     black: '#000',
+    red: '#c83333',
+    redHover: '#fa4c4c',
     blue: '#011FBB',
     blueDark: '#001C33',
     blueLight: '#E9F4FE',
-    disabled: '#a1a4b0'
+    disabled: '#a1a4b0',
+    overlay: '#000000b3'
   },
   spacings: {
     xxSmall: '0.4rem',
@@ -74,6 +77,13 @@ export const T = {
     fadeIn: keyframes`
       to {
         opacity: 1;
+      }
+    `,
+    glass: keyframes`
+      to {
+        background-color: #000000b3;
+        backdrop-filter: blur(0.7rem);
+        -webkit-backdrop-filter: blur(0.7rem);
       }
     `
   },

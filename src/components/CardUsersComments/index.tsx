@@ -23,7 +23,7 @@ const CardUsersComments = ({
   urlProfile,
   heigthREM
 }: CardUsersCommentsProps) => (
-  <S.Container heigthREM={heigthREM}>
+  <S.Container heigthREM={heigthREM} as="article">
     <S.WrapperInfoCard>
       <S.Comment>{comment}</S.Comment>
 

@@ -2,7 +2,7 @@ import Layouts from 'layouts'
 import styled, { css } from 'styled-components'
 import { Waves } from 'components/Svg/Waves'
 
-export const Header = styled.header.attrs({ role: 'heading' })`
+export const Header = styled.header`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,11 +16,12 @@ export const Container = styled(Layouts.Row)`
   position: relative;
 `
 
-export const ImgPinkBalloon = styled.svg.attrs({ alt: 'Balão Rosa' })`
+export const ImgPinkBalloon = styled.svg`
   display: none;
   position: absolute;
   left: -2.5rem;
   top: -2rem;
+  filter: drop-shadow(3px 7px 18px #0a0d277a);
 
   ${({ theme }) => css`
     opacity: 0;
@@ -33,11 +34,12 @@ export const ImgPinkBalloon = styled.svg.attrs({ alt: 'Balão Rosa' })`
   `}
 `
 
-export const ImgPurpleBalloon = styled.svg.attrs({ alt: 'Balão Roxo' })`
+export const ImgPurpleBalloon = styled.svg`
   display: none;
   position: absolute;
   right: -4.5rem;
   bottom: -3rem;
+  filter: drop-shadow(-3px 7px 18px #0a0d277a);
 
   ${({ theme }) => css`
     opacity: 0;

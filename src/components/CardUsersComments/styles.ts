@@ -1,7 +1,7 @@
 import Layouts from 'layouts'
 import styled, { css } from 'styled-components'
 
-export const Container = styled(Layouts.Col).attrs({ as: 'article' })<{
+export const Container = styled(Layouts.Col)<{
   heigthREM: number
 }>`
   ${({ heigthREM }) => css`

@@ -24,9 +24,10 @@ const Banner = ({
   const router = useRouter()
 
   return (
-    <S.Header>
+    <S.Header role="heading">
       <S.Container>
         <S.ImgPinkBalloon
+          aria-hidden="true"
           width="62"
           height="62"
           viewBox="0 0 62 62"
@@ -75,6 +76,7 @@ const Banner = ({
         </S.Row>
 
         <S.ImgPurpleBalloon
+          aria-hidden="true"
           width="100"
           height="100"
           viewBox="0 0 100 100"

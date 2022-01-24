@@ -1,9 +1,9 @@
 import { ButtonHTMLAttributes, forwardRef, ReactNode } from 'react'
 import * as S from 'components/Button/styles'
 
-export type SizeProps = 'small' | 'medium' | 'large'
+export type SizeProps = 'small' | 'medium' | 'large' | 'xLarge'
 
-export type ColorProps = 'gray' | 'blue'
+export type ColorProps = 'gray' | 'blue' | 'red'
 
 export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: ReactNode
