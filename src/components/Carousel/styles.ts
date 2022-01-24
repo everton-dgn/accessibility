@@ -133,7 +133,7 @@ export const Wrapper = styled(Layouts.Col)`
     color: transparent;
     border: none;
     outline: 0;
-    background-color: rgba(255, 255, 255, 0.73);
+    background-color: #ffffffba;
     width: 4.1rem;
     height: 8.2rem;
     transition: background-color 0.2s linear;

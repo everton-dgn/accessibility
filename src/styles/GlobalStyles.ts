@@ -56,7 +56,7 @@ export default createGlobalStyle`
 
   ::-webkit-scrollbar,
   scrollbar-width {
-    width: 1.2rem !important;
+    width: 1.6rem !important;
     background-color: ${({ theme }) => theme.colors.white};
   }
 
@@ -71,7 +71,7 @@ export default createGlobalStyle`
   :root {
     ${({ theme }) => css`
       scrollbar-color: ${theme.colors.primary} ${theme.colors.white} !important;
-      scrollbar-width: 1.2rem !important;
+      scrollbar-width: 1.6rem !important;
     `}
   }
 `
