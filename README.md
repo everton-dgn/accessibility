@@ -5,25 +5,15 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/accessibility?color=yellow&style=plastic)
 </div>
 
-<br />
-
-<div align="center">
-
-  ![Imagem do projeto](public/imgs/logo.svg)
-</div>
-
-<br />
-<br />
-
 <h1 align="center">Acessibilidade</h1>
 
 <br />
 
 # :camera_flash: Screenshots do Projeto
 
-![Imagem do projeto](screenshots/desktop.png)
+![Imagem do projeto](screenshots/desktop.jpg)
 
-![Imagem do projeto](screenshots/mobile.png)
+![Imagem do projeto](screenshots/mobile.jpg)
 
 # :memo: Sobre o Projeto
 
