@@ -68,7 +68,7 @@ exports[`<Button /> should render a small blue button with text 1`] = `
   color: #fff;
 }
 
-@media screen and (min-width:435px) {
+@media screen and (min-width:480px) {
   .c0 {
     width: -webkit-fit-content;
     width: -moz-fit-content;

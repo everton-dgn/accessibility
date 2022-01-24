@@ -112,6 +112,8 @@ exports[`<Banner /> should render the banner 1`] = `
   position: absolute;
   left: -2.5rem;
   top: -2rem;
+  -webkit-filter: drop-shadow(3px 7px 18px #0a0d277a);
+  filter: drop-shadow(3px 7px 18px #0a0d277a);
   opacity: 0;
   -webkit-animation: jfPkyz 0.8s ease forwards;
   animation: jfPkyz 0.8s ease forwards;
@@ -122,6 +124,8 @@ exports[`<Banner /> should render the banner 1`] = `
   position: absolute;
   right: -4.5rem;
   bottom: -3rem;
+  -webkit-filter: drop-shadow(-3px 7px 18px #0a0d277a);
+  filter: drop-shadow(-3px 7px 18px #0a0d277a);
   opacity: 0;
   -webkit-animation: hngCSK 0.8s ease forwards;
   animation: hngCSK 0.8s ease forwards;
@@ -217,7 +221,7 @@ exports[`<Banner /> should render the banner 1`] = `
   width: auto;
 }
 
-@media screen and (min-width:435px) {
+@media screen and (min-width:480px) {
   .c11 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -281,7 +285,7 @@ exports[`<Banner /> should render the banner 1`] = `
     class="c1 c2"
   >
     <svg
-      alt="Balão Rosa"
+      aria-hidden="true"
       class="c3"
       fill="none"
       height="62"
@@ -363,7 +367,7 @@ exports[`<Banner /> should render the banner 1`] = `
       </div>
     </div>
     <svg
-      alt="Balão Roxo"
+      aria-hidden="true"
       class="c14"
       fill="none"
       height="100"

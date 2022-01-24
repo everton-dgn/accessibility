@@ -192,6 +192,17 @@ exports[`<CarouselUsersComments /> should render the carousel with children 1`] 
   display: none !important;
 }
 
+.c1 .slick-arrow {
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.c1 .slick-arrow:focus {
+  opacity: 1;
+  border-color: #334bc8;
+}
+
 .c1 .slick-next:before,
 .c1 .slick-prev:before {
   line-height: 1;
