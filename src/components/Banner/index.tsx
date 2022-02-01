@@ -24,7 +24,7 @@ const Banner = ({
   const router = useRouter()
 
   return (
-    <S.Header role="heading">
+    <S.Header role="banner">
       <S.Container>
         <S.ImgPinkBalloon
           aria-hidden="true"
@@ -42,8 +42,8 @@ const Banner = ({
 
         <S.Row>
           <S.WrapperInfo>
-            <S.Title>{title}</S.Title>
-            <S.Description>{description}</S.Description>
+            <S.Title as="h1">{title}</S.Title>
+            <S.Description as="h2">{description}</S.Description>
             {!!question && <S.Question>{question}</S.Question>}
 
             {!!btn && (
