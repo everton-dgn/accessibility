@@ -1,4 +1,3 @@
-import { useEffect, useMemo } from 'react'
 import { useRouter } from 'next/router'
 import * as S from 'styles'
 import * as C from 'components'
@@ -6,20 +5,12 @@ import * as C from 'components'
 export default function Home() {
   const router = useRouter()
 
-  const hrefs = useMemo(
-    () => [
-      'pagina_exemplo_1',
-      'pagina_exemplo_2',
-      'pagina_exemplo_3',
-      'pagina_exemplo_4'
-    ],
-    []
-  )
-
-  useEffect(() => {
-    hrefs.map(href => router?.prefetch(href))
-    // eslint-disable-next-line
-  }, [])
+  const hrefs = [
+    'pagina_exemplo_1',
+    'pagina_exemplo_2',
+    'pagina_exemplo_3',
+    'pagina_exemplo_4'
+  ]
 
   const handleClickBtnRedirectToPage = (href: string) => {
     router?.push(href)
@@ -42,6 +33,7 @@ export default function Home() {
             aria-label={`Página Exemplo ${i + 1}`}
             className={`btn${i + 1}`}
             onClick={() => handleClickBtnRedirectToPage(href)}
+            onMouseEnter={() => router?.prefetch(href)}
           />
         ))}
       </S.BtnGroup>
