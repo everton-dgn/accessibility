@@ -38,10 +38,6 @@ const ColorsBtn = {
     ${({ theme }) => css`
       background-color: ${theme.colors.gray};
 
-      &:focus {
-        box-shadow: 0 0 0 0.2rem #aaaaaa, 0 0.1rem 1.5rem #3e396b80;
-      }
-
       &:hover {
         background-color: ${theme.colors.grayHover};
       }
@@ -51,10 +47,6 @@ const ColorsBtn = {
     ${({ theme }) => css`
       background-color: ${theme.colors.primary};
 
-      &:focus {
-        box-shadow: 0 0 0 0.2rem #5872ff, 0 0.1rem 1.5rem #3e396b80;
-      }
-
       &:hover {
         background-color: ${theme.colors.primaryHover};
       }
@@ -63,10 +55,6 @@ const ColorsBtn = {
   red: css`
     ${({ theme }) => css`
       background-color: ${theme.colors.red};
-
-      &:focus {
-        box-shadow: 0 0 0 0.2rem #fd6e6e, 0 0.1rem 1.5rem #3e396b80;
-      }
 
       &:hover {
         background-color: ${theme.colors.redHover};
@@ -84,7 +72,7 @@ export const Container = styled.button<BtnProps>`
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    border: 0.1rem solid transparent;
+    border: 2px solid transparent;
     text-shadow: 0 0 0.3rem rgb(0 0 0 / 60%);
     transition: background-color 0.15s ease-in-out;
     width: 100%;
@@ -95,15 +83,16 @@ export const Container = styled.button<BtnProps>`
       width: ${fullWidth ? '100%' : 'fit-content'};
     }
 
-    &:active {
-      box-shadow: none;
-    }
-
     &:disabled,
     &:disabled:hover {
       opacity: 0.5;
       cursor: not-allowed;
       background-color: ${theme.colors.disabled};
+    }
+
+    &:focus {
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px #222;
     }
 
     span {

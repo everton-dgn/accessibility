@@ -46,8 +46,3 @@ export const BtnGroup = styled(Layouts.Col)`
   `}
   align-items: center;
 `
-
-export const LinkBtn = styled.a`
-  display: flex;
-  width: 100%;
-`
