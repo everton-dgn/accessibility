@@ -20,7 +20,7 @@ exports[`<Banner /> should render the banner 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  border: 0.1rem solid transparent;
+  border: 2px solid transparent;
   text-shadow: 0 0 0.3rem rgb(0 0 0 / 60%);
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
@@ -33,16 +33,8 @@ exports[`<Banner /> should render the banner 1`] = `
   padding: 1.6rem 3.2rem;
 }
 
-.c11:focus {
-  box-shadow: 0 0 0 0.2rem #5872ff,0 0.1rem 1.5rem #3e396b80;
-}
-
 .c11:hover {
   background-color: #5872ff;
-}
-
-.c11:active {
-  box-shadow: none;
 }
 
 .c11:disabled,
@@ -50,6 +42,11 @@ exports[`<Banner /> should render the banner 1`] = `
   opacity: 0.5;
   cursor: not-allowed;
   background-color: #a1a4b0;
+}
+
+.c11:focus {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #222;
 }
 
 .c11 span {
@@ -279,7 +276,7 @@ exports[`<Banner /> should render the banner 1`] = `
 
 <header
   class="c0"
-  role="heading"
+  role="banner"
 >
   <div
     class="c1 c2"
@@ -304,16 +301,16 @@ exports[`<Banner /> should render the banner 1`] = `
       <div
         class="c5 c6"
       >
-        <div
+        <h1
           class="c5 c7"
         >
           Bem-vindo Marcio,
-        </div>
-        <div
+        </h1>
+        <h2
           class="c5 c8"
         >
           Descrição de exemplo.
-        </div>
+        </h2>
         <div
           class="c5 c9"
         >
