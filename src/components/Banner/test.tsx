@@ -29,7 +29,7 @@ describe('<Banner />', () => {
   })
 
   it('should render the banner', () => {
-    const banner = screen.getByRole('heading')
+    const banner = screen.getByRole('banner')
 
     expect(banner).toBeInTheDocument()
     expect(banner).toMatchSnapshot()
